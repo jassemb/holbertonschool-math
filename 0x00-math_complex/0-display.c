@@ -16,7 +16,6 @@ typedef struct complex {
  * display_complex_number - print complex number
  *
  * @c: pointer to struct of type struct complex
- *
  * Return: always void
  */
 
