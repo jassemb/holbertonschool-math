@@ -10,7 +10,7 @@ double argument(complex c)
 	double arg;
 	double value;
 
-	value =(c.re / c.im);	
+	value =(c.im / c.re);	
 	arg = atan(value);
 	return(arg);
 }
