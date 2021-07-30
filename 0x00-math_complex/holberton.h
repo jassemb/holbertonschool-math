@@ -9,8 +9,8 @@
  * @fun: The function associated
  */
 typedef struct complex {
-    int re;
-    int im;
+    double re;
+    double im;
 } complex;
 
 /* functions prototype */
