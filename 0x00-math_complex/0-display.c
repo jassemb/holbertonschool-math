@@ -6,13 +6,9 @@
 
 void display_complex_number(complex c)
 {
-	if (c.im > 0)
-		printf("%d + %di\n", c.re, c.im);
-	else if (c.im < 0)
-	{
-		c.im = -c.im;
-		 printf("%d - %di\n", c.re, c.im);
-	}
+	if (c.im == 0)
+		printf("%0.f\n", c.re);
 	else
-		  printf("%d\n", c.re);
+		printf("%0.f + %0.fi\n", c.re, c.im);
+
 }
