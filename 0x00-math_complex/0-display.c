@@ -1,26 +1,18 @@
-#include <stdio.h>
-
+#include "holberton.h"
 /**
- * struct complex - complex information
- * @re: real part of complex number
- * @im: imaginare part of complex number
- *
- * Description: complex struct
- */
-
-typedef struct complex {
-    int re;
-    int im;
-} complex;
-/**
- * display_complex_number - print complex number
- *
- * @c: pointer to struct of type struct complex
- * Return: always void
+ * display_complex_number - function that displays the complex numbers.
+ * @c: The complex number.
  */
 
 void display_complex_number(complex c)
 {
-    printf("\n%d + %di", c.re, c.im);
-} 
-
+	if (c.im > 0)
+		printf("%d + %di\n", c.re, c.im);
+	else if (c.im < 0)
+	{
+		c.im = -c.im;
+		 printf("%d - %di\n", c.re, c.im);
+	}
+	else
+		  printf("%d\n", c.re);
+}
